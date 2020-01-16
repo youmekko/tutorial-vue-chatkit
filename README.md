@@ -29,6 +29,8 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
+
+
 **@pusher/chatkit-client** a real-time client interface for the ChatKit service
 
 **bootstrap-vue** a CSS framework
