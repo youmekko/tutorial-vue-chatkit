@@ -13,11 +13,21 @@ const vuexLocal = new VuexPersistence({
 
 export default new Vuex.Store({
   state: {
+    loading: false,
+    sending: false,
+    error: null,
+    user: [],
+    reconnect: false,
+    activeRoom: null,
+    rooms: [],
+    users: [],
+    message: [],
+    userTyping: null
   },
   mutations,
   actions,
-  getters :{
-
+  getters : {
+      hasError: state => state.error ? true : false
   },
   plugins: [vuexLocal.plugins],
   strict: debug
