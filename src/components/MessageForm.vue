@@ -1,6 +1,6 @@
 <template>
     <div class="message-from id-over">
-        <small class="text-muted">@{{ user.username}}</small>
+        <small class="text-muted">@{{ user.username }}</small>
         <b-form @submit.prevent="onSubmit" class="ld-over" v-bind:class="{running: sending}">
             <div class="ld ld-ring id-spin"></div>
             <b-alert variant="danger" :show="hasError">{{ error }}</b-alert>
@@ -40,7 +40,7 @@ export default {
             'activeRoom'
         ]),
         ...mapGetters([
-            'haError'
+            'hasError'
         ])
     }
 }

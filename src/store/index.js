@@ -16,13 +16,54 @@ export default new Vuex.Store({
   state: {
     loading: false,
     sending: false,
-    error: null,
-    user: [],
+    error: 'Relax! This is just a drill error message',
+    user: { 
+        username : 'kana',
+        name: 'kanako'
+    },
     reconnect: false,
-    activeRoom: null,
-    rooms: [],
-    users: [],
-    message: [],
+    activeRoom: {
+      id: '124'
+    },
+    rooms: [
+      {
+        id: '123',
+        name: 'Korea'
+      },
+      {
+        id: '124',
+        name: 'Canada'
+      }
+    ],
+    users: [
+      {
+        username : 'kana',
+        name: 'kanako',
+        presense: 'online'
+      },
+      {
+        username: 'mica',
+        name: 'mica white',
+        presense: 'offline'
+      }
+    ],
+    messages: [
+      {
+        username: 'kana',
+        date: '01/01/2020',
+        text: 'Happy New Year!'
+      },
+      {
+        username: 'kana',
+        date: '01/01/2020',
+        text: 'xoxo!! LOVE!!!'
+      },
+      {
+        username: 'edwin',
+        date: '01/01/2020',
+        text: 'sake bom!!!'
+      }
+    ],
     userTyping: null
   },
   mutations,
