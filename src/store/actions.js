@@ -15,7 +15,7 @@ export default {
             const currentUser = await chatkit.connectUser(userId);
             commit('setUser', {
                 username: currentUser.id,
-                name: curreuntUser.name
+                name: currentUser.name
             });
             commit('setReconnect', false);
 
