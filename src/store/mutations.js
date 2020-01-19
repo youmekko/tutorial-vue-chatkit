@@ -4,7 +4,7 @@ export default {
         state.error = error;
     },
 
-    setLoading(sate, loading){
+    setLoading(state, loading){
         state.loading = loading;
     },
 
@@ -16,7 +16,7 @@ export default {
         state.reconnect = reconnect;
     },
 
-    setActiveRoom(sate, roomId){
+    setActiveRoom(state, roomId){
         state.activeRoom = roomId;
     },
 
@@ -24,7 +24,7 @@ export default {
         state.rooms = rooms;
     },
 
-    setUser(state, users){
+    setUsers(state, users){
         state.users = users;
     },
 

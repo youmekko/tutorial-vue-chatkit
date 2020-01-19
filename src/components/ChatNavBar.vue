@@ -1,7 +1,7 @@
 <template>
     <b-navbar id="chat-navbar" toggleable="md" type="dark" variant="info">
         <b-navbar-brand href="#">
-            Vue chat
+            Vue Chat
         </b-navbar-brand>
         <b-navbar-nav class="ml-auto">
             <b-nav-text>{{ user.name }} | </b-nav-text>
