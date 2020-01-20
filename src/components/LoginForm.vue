@@ -22,7 +22,7 @@
                       variant="primary"
                       class="ld-ext-right"
                       v-bind:class="{running: loading}"
-                      :disabled="isVisible">
+                      :disabled="isValid">
                       Login <div class="ld ld-ring ld-spin"></div>
             </b-button> 
         </b-form> 
