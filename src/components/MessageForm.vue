@@ -35,7 +35,7 @@ export default {
     computed: {
         ...mapState([
             'user',
-            'seding',
+            'sending',
             'error',
             'activeRoom'
         ]),

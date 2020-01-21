@@ -18,8 +18,8 @@ export default new Vuex.Store({
     sending: false,
     error: 'Relax! This is just a drill error message',
     user: { 
-        username : 'kana',
-        name: 'kanako'
+        username : 'youmekko',
+        name: 'youme choi'
     },
     reconnect: false,
     activeRoom: {
@@ -27,34 +27,45 @@ export default new Vuex.Store({
     },
     rooms: [
       {
-        id: '123',
-        name: 'Korea'
+        id: '22202258-4590-42bf-a542-889de27d6cec',
+        name: 'kinka'
       },
       {
-        id: '124',
-        name: 'Canada'
+        id: '17fa9e1cc-012c-42a9-aa88-647476bbcdef24',
+        name: 'test'
       }
     ],
     users: [
       {
-        username : 'kana',
-        name: 'kanako',
+        username : 'jino',
+        name: 'jinho bahng',
         presense: 'online'
       },
       {
-        username: 'mica',
-        name: 'mica white',
-        presense: 'offline'
+        username: 'ten',
+        name: 'teahyun kim',
+        presense: 'online'
+      },
+      {
+        username: 'edwin',
+        name: 'seungkoo ryu',
+        presense: 'online'
+      }
+      ,
+      {
+        username: 'youmekko',
+        name: 'youme choi',
+        presense: 'online'
       }
     ],
     messages: [
       {
-        username: 'kana',
+        username: 'youmekko',
         date: '01/01/2020',
         text: 'Happy New Year!'
       },
       {
-        username: 'kana',
+        username: 'youmekko',
         date: '01/01/2020',
         text: 'xoxo!! LOVE!!!'
       },
