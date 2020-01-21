@@ -23,7 +23,7 @@ export default new Vuex.Store({
     },
     reconnect: false,
     activeRoom: {
-      id: '124'
+      id: '22202258-4590-42bf-a542-889de27d6cec'
     },
     rooms: [
       {

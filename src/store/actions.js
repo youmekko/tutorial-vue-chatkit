@@ -32,7 +32,7 @@ export default {
                 id: activeRoom.id,
                 name: activeRoom.name
             })
-            await chatkit.subscribeRoom(activeRoom);
+            await chatkit.subscribeRoom(activeRoom.id);
 
             commit('setReconnect', false);
 
