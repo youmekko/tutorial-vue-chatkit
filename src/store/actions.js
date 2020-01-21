@@ -32,7 +32,7 @@ export default {
                 id: activeRoom.id,
                 name: activeRoom.name
             })
-            await chatkit.subscribeRoom(activeRoom.id);
+            await chatkit.subscribeToRoom(activeRoom.id);
 
             commit('setReconnect', false);
 
@@ -44,6 +44,17 @@ export default {
             handleError(commit, error);
         } finally {
             commit('setLoading', false)
+        }
+    },
+
+
+    //changing room
+    async changeRoom({commit}, roomId){
+        try{
+            const { id, name } = await chatkit.subscribeToRoom(roomId);
+            commit('setActiveRoom', { id, name })
+        }catch (error) {
+            handleError(commit ,error);
         }
     }
 }

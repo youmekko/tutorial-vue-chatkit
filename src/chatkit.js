@@ -29,7 +29,7 @@ function setMembers(){
     store.commit('setUsers', members);
 }
 
-async function subscribeRoom(roomId){
+async function subscribeToRoom(roomId){
     store.commit('clearChatRoom');
     activeRoom = await currentUser.subscribeToRoom({
         roomId,
@@ -64,5 +64,5 @@ async function subscribeRoom(roomId){
 
 export default {
     connectUser,
-    subscribeRoom
+    subscribeToRoom
 }
