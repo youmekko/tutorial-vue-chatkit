@@ -54,7 +54,8 @@ export default {
             const { id, name } = await chatkit.subscribeToRoom(roomId);
             commit('setActiveRoom', { id, name })
         }catch (error) {
-            handleError(commit ,error);
+            console.log('error', error)
+            handleError(commit, error);
         }
     }
 }

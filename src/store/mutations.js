@@ -29,8 +29,8 @@ export default {
     },
 
     clearChatRoom(state){
-        state.user = [];
-        state.mesasges = [];
+        state.users = [];
+        state.messages = [];
     },
 
     setMessages(state, messages){
