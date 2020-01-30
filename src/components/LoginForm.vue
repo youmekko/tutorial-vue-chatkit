@@ -58,6 +58,7 @@ export default {
         async onSubmit() {
             const result = await this.login(this.userId);
             if(result){
+                localStorage.setItem('loginSuccess', this.userId);
                 this.$router.push('chat');
             }
         }

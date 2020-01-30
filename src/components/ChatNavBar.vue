@@ -30,6 +30,7 @@ export default {
             'setReconnect'
         ]),
         onLogout() {
+            delete localStorage.loginSuccess;
             this.$router.push({path: '/'})
             this.logout()
         },

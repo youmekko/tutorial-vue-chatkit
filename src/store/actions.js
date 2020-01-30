@@ -27,7 +27,7 @@ export default {
             commit('setRooms', rooms);
 
             //subsribe user to a room
-            const activeRoom = state.activeRoom || rooms[0] //pci last used room, ror the first one
+            const activeRoom = state.activeRoom || rooms[0] //pci last used room, or the first one
             commit('setActiveRoom', {
                 id: activeRoom.id,
                 name: activeRoom.name
